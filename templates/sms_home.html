@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMS - Home</title>
+  </head>
+  <body>
+    <div>
+      {% for student in students %}
+      <ul>
+        <li>{{ student.name }}</li>
+        <li>{{ student.email }}</li>
+        <li>{{ student.age }}</li>
+        <li>{{ student.department }}</li>
+        <li>{{ student.date_joined }}</li>
+      </ul>
+      {% endfor %}
+    </div>
+  </body>
+</html>
